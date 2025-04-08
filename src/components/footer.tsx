@@ -1,6 +1,12 @@
 import React from "react"
 
-import { IconBrandFacebook, IconBrandGithub, IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from "justd-icons"
+import {
+	IconBrandFacebook,
+	IconBrandGithub,
+	IconBrandInstagram,
+	IconBrandTwitter,
+	IconBrandYoutube,
+} from "@intentui/icons"
 import Link from "next/link"
 import { Button, TextField } from "ui"
 
@@ -173,7 +179,7 @@ export function Footer() {
 					</div>
 					<p className="mt-8 text-muted-fg text-xs leading-5 md:order-1 md:mt-0">
 						&copy; 2024 Next Starter Kit by{" "}
-						<Link target="_blank" href="https://getjustd.com" className="font-semibold text-fg">
+						<Link target="_blank" href="https://intentui.com" className="font-semibold text-fg">
 							justd
 						</Link>
 						, Inc. All rights reserved.

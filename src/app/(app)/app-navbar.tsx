@@ -7,14 +7,14 @@ import {
 	IconApple,
 	IconArrowUpRight,
 	IconBrandGithub,
-	IconBrandJustd,
+	IconBrandIntentui,
 	IconChevronDown,
 	IconColors,
 	IconColorSwatch,
 	IconCube,
 	IconHome,
 	IconTelephone,
-} from "justd-icons"
+} from "@intentui/icons"
 import { usePathname } from "next/navigation"
 import { buttonStyles, Link, Menu, Navbar } from "ui"
 
@@ -27,7 +27,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 		<Navbar isSticky isOpen={isOpen} onOpenChange={setIsOpen} {...props}>
 			<Navbar.Nav>
 				<Navbar.Logo className="text-fg" href="/">
-					<IconBrandJustd />
+					<IconBrandIntentui />
 				</Navbar.Logo>
 				<Navbar.Section>
 					<Navbar.Item isCurrent={pathname === "/"} href="/">
@@ -44,7 +44,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 					</Navbar.Item>
 					<Navbar.Item
 						target="_blank"
-						href="https://blocks.getjustd.com"
+						href="https://blocks.intentui.com"
 						className="text-primary hover:text-primary/90"
 					>
 						<IconTelephone className="inline size-4 lg:hidden" />
@@ -57,22 +57,22 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 							<IconChevronDown className="ml-2 size-4 duration-200 group-data-pressed:rotate-180" />
 						</Navbar.Item>
 						<Menu.Content className="sm:min-w-48">
-							<Menu.Item target="_blank" href="https://getjustd.com/components">
+							<Menu.Item target="_blank" href="https://intentui.com/components">
 								<IconCube />
 								<Menu.Label>Components</Menu.Label>
 								<IconArrowUpRight className="absolute right-0" />
 							</Menu.Item>
-							<Menu.Item target="_blank" href="https://getjustd.com/icons">
-								<IconBrandJustd />
+							<Menu.Item target="_blank" href="https://intentui.com/icons">
+								<IconBrandIntentui />
 								<Menu.Label>Icons</Menu.Label>
 								<IconArrowUpRight className="absolute right-0" />
 							</Menu.Item>
-							<Menu.Item target="_blank" href="https://getjustd.com/themes">
+							<Menu.Item target="_blank" href="https://intentui.com/themes">
 								<IconColors />
 								<Menu.Label>Themes</Menu.Label>
 								<IconArrowUpRight className="absolute right-0" />
 							</Menu.Item>
-							<Menu.Item target="_blank" href="https://getjustd.com/colors">
+							<Menu.Item target="_blank" href="https://intentui.com/colors">
 								<IconColorSwatch />
 								<Menu.Label>Colors</Menu.Label>
 								<IconArrowUpRight className="absolute right-0" />
@@ -81,23 +81,23 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 					</Menu>
 				</Navbar.Section>
 				<Navbar.Section className="hidden sm:ml-auto lg:flex">
-					<Navbar.Flex className="gap-1 md:gap-1td">
+					<Navbar.Flex className="gap-1 md:gap-1">
 						<ThemeSwitcher />
 						<Link
 							aria-label="Goto GitHub Repository"
 							className={buttonStyles({ intent: "outline", size: "square-petite" })}
 							target="_blank"
-							href="https://github.com/justdlabs/next.js"
+							href="https://github.com/intentuilabs/next.js"
 						>
 							<IconBrandGithub />
 						</Link>
 						<Link
-							aria-label="Goto getjustd.com"
+							aria-label="Goto intentui.com"
 							className={buttonStyles({ intent: "outline", size: "square-petite" })}
 							target="_blank"
 							href="https://justd.co"
 						>
-							<IconBrandJustd />
+							<IconBrandIntentui />
 						</Link>
 						<Navbar.Item
 							className={buttonStyles({ intent: "outline", size: "small" })}
@@ -119,16 +119,16 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 						<Link
 							aria-label="Goto GitHub Repository"
 							className={buttonStyles({ intent: "outline", size: "square-petite" })}
-							href="https://github.com/justdlabs/next.js"
+							href="https://github.com/intentuilabs/next.js"
 						>
 							<IconBrandGithub />
 						</Link>
 						<Link
-							aria-label="Goto getjustd.com"
+							aria-label="Goto intentui.com"
 							className={buttonStyles({ intent: "outline", size: "square-petite" })}
-							href="https://getjustd.com"
+							href="https://intentui.com"
 						>
-							<IconBrandJustd />
+							<IconBrandIntentui />
 						</Link>
 						<Navbar.Item
 							className={buttonStyles({ intent: "outline", size: "small" })}

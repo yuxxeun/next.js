@@ -16,11 +16,11 @@ const fontMono = localFont({
 
 export const metadata: Metadata = {
 	title: {
-		template: "%s / Justd Starter Kit with Next",
-		default: "Justd Starter Kit with Next",
+		template: "%s / Intent UI Starter Kit with Next",
+		default: "Intent UI Starter Kit with Next",
 	},
 	description:
-		"Next.js 15 Starter Kit with Tailwind CSS, TypeScript, React, React Aria Components, Justd Components, Framer Motion, and more.",
+		"Next.js 15 Starter Kit with Tailwind CSS, TypeScript, React, React Aria Components, Intent UI Components, Framer Motion, and more.",
 }
 
 export default function RootLayout({

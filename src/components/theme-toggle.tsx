@@ -1,6 +1,6 @@
 "use client"
 
-import { IconDeviceDesktop, IconMoon, IconSun } from "justd-icons"
+import { IconDeviceDesktop, IconMoon, IconSun } from "@intentui/icons"
 import { useTheme } from "next-themes"
 import { Button } from "ui"
 import { twJoin } from "tailwind-merge"
