@@ -6,7 +6,7 @@ import { Heading } from "@/components/ui/heading"
 
 interface HeaderProps {
 	title: string
-	description: string
+	description?: string
 }
 
 export function Header({ title, description }: HeaderProps) {
@@ -15,7 +15,7 @@ export function Header({ title, description }: HeaderProps) {
 			<Container>
 				<Card.Header className="max-w-xl p-0">
 					<Heading className="text-xl sm:text-2xl">{title}</Heading>
-					<Card.Description className="text-sm sm:text-base">{description}</Card.Description>
+					{description && <Card.Description className="text-sm sm:text-base">{description}</Card.Description>}
 				</Card.Header>
 			</Container>
 		</header>
