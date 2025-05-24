@@ -2,7 +2,7 @@
 
 import { Container } from "@/components/ui/container"
 import { Card } from "@/components/ui/card"
-import { Heading } from "ui"
+import { Heading } from "@/components/ui/heading"
 
 interface HeaderProps {
 	title: string

@@ -1,6 +1,6 @@
 "use client"
 
-import { useTheme } from "@/components/theme-provider"
+import { useTheme } from "next-themes"
 import { Toaster as ToasterPrimitive, type ToasterProps } from "sonner"
 
 const Toast = ({ ...props }: ToasterProps) => {

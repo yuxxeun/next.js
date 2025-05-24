@@ -8,10 +8,8 @@ import {
 	IconBrandYoutube,
 } from "@intentui/icons"
 import Link from "next/link"
-import { Button, TextField } from "ui"
-
-import { ToggleTheme } from "./theme-toggle"
-
+import { Button } from "@/components/ui/button"
+import { TextField } from "@/components/ui/text-field"
 const navigation = {
 	solutions: [
 		{ name: "Marketing", href: "#" },
@@ -160,7 +158,6 @@ export function Footer() {
 								</div>
 							</form>
 						</div>
-						<ToggleTheme />
 					</div>
 				</div>
 				<div className="mt-16 border-slate-900/10 border-t pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">

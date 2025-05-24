@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 import { RouterProvider } from "react-aria-components"
 
-import { ThemeProvider } from "./theme-provider"
+import { ThemeProvider } from "next-themes"
 
 declare module "react-aria-components" {
 	interface RouterConfig {

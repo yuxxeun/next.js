@@ -18,8 +18,7 @@
 			}
 		],
 		"paths": {
-			"@/*": ["./src/*"],
-			"ui": ["./src/components/ui/index.ts"]
+			"@/*": ["./src/*"]
 		},
 		"target": "ES2017"
 	},

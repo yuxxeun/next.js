@@ -2,14 +2,14 @@
 
 import { IconMoon, IconSun } from "@intentui/icons"
 import { useTheme } from "next-themes"
-import { Button } from "ui"
+import { Button } from "@/components/ui/button"
 
 export function ThemeSwitcher() {
 	const { resolvedTheme, setTheme } = useTheme()
 
 	return (
 		<Button
-			intent="outline"
+			intent="plain"
 			size="square-petite"
 			aria-label="Switch theme"
 			onPress={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}

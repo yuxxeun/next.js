@@ -3,7 +3,12 @@
 import type { FormEvent } from "react"
 
 import { toast } from "sonner"
-import { Button, Card, Checkbox, Form, Link, TextField } from "ui"
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Form } from "@/components/ui/form"
+import { Link } from "@/components/ui/link"
+import { TextField } from "@/components/ui/text-field"
 
 export function LoginForm() {
 	const submit = (e: FormEvent) => {

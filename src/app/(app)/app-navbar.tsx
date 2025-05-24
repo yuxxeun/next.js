@@ -16,7 +16,10 @@ import {
 	IconTelephone,
 } from "@intentui/icons"
 import { usePathname } from "next/navigation"
-import { buttonStyles, Link, Menu, Navbar } from "ui"
+import { Navbar } from "@/components/ui/navbar"
+import { Menu } from "@/components/ui/menu"
+import { Link } from "@/components/ui/link"
+import { buttonStyles } from "@/components/ui/button"
 
 export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Navbar>) {
 	const pathname = usePathname()
@@ -26,8 +29,8 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 	return (
 		<Navbar isSticky isOpen={isOpen} onOpenChange={setIsOpen} {...props}>
 			<Navbar.Nav>
-				<Navbar.Logo className="text-fg" href="/">
-					<IconBrandIntentui />
+				<Navbar.Logo href="/">
+					<IconBrandIntentui className="size-6" />
 				</Navbar.Logo>
 				<Navbar.Section>
 					<Navbar.Item isCurrent={pathname === "/"} href="/">
@@ -85,7 +88,7 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 						<ThemeSwitcher />
 						<Link
 							aria-label="Goto GitHub Repository"
-							className={buttonStyles({ intent: "outline", size: "square-petite" })}
+							className={buttonStyles({ intent: "plain", size: "square-petite" })}
 							target="_blank"
 							href="https://github.com/intentuilabs/next.js"
 						>
@@ -93,14 +96,14 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 						</Link>
 						<Link
 							aria-label="Goto intentui.com"
-							className={buttonStyles({ intent: "outline", size: "square-petite" })}
+							className={buttonStyles({ intent: "plain", size: "square-petite" })}
 							target="_blank"
 							href="https://justd.co"
 						>
 							<IconBrandIntentui />
 						</Link>
 						<Navbar.Item
-							className={buttonStyles({ intent: "outline", size: "small" })}
+							className={buttonStyles({ intent: "plain", size: "small" })}
 							isCurrent={pathname === "/login"}
 							href="/login"
 						>
@@ -118,20 +121,20 @@ export function AppNavbar({ children, ...props }: React.ComponentProps<typeof Na
 						<ThemeSwitcher />
 						<Link
 							aria-label="Goto GitHub Repository"
-							className={buttonStyles({ intent: "outline", size: "square-petite" })}
+							className={buttonStyles({ intent: "plain", size: "square-petite" })}
 							href="https://github.com/intentuilabs/next.js"
 						>
 							<IconBrandGithub />
 						</Link>
 						<Link
 							aria-label="Goto intentui.com"
-							className={buttonStyles({ intent: "outline", size: "square-petite" })}
+							className={buttonStyles({ intent: "plain", size: "square-petite" })}
 							href="https://intentui.com"
 						>
 							<IconBrandIntentui />
 						</Link>
 						<Navbar.Item
-							className={buttonStyles({ intent: "outline", size: "small" })}
+							className={buttonStyles({ intent: "plain", size: "small" })}
 							isCurrent={pathname === "/login"}
 							href="/login"
 						>

@@ -1,7 +1,7 @@
 import { Providers } from "@/components/providers"
 import type { Metadata } from "next"
 import localFont from "next/font/local"
-import { Toast } from "ui"
+import { Toast } from "@/components/ui/toast"
 
 import "./globals.css"
 

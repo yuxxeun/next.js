@@ -1,5 +1,5 @@
 import { IconBrandIntentui } from "@intentui/icons"
-import { Link } from "ui"
+import { Link } from "@/components/ui/link"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
