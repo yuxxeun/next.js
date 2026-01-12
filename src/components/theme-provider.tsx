@@ -1,9 +1,23 @@
-"use client"
+"use client";
 
-import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes"
+import {
+  ThemeProvider as Primitive,
+  type ThemeProviderProps,
+  useTheme,
+} from "next-themes";
 
-const ThemeProvider = ({ children, ...props }: React.ComponentProps<typeof NextThemesProvider>) => {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
-}
+const ThemeProvider = ({ children, ...props }: ThemeProviderProps) => {
+  return (
+    <Primitive
+      storageKey="primitive-theme"
+      enableSystem
+      disableTransitionOnChange
+      attribute="class"
+      {...props}
+    >
+      {children}
+    </Primitive>
+  );
+};
 
-export { useTheme, ThemeProvider }
+export { ThemeProvider, useTheme };
