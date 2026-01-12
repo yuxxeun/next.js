@@ -14,6 +14,9 @@ export default function Home() {
             "*:hover:underline *:font-medium *:text-primary-subtle-fg",
           )}
         >
+          <a target="_blank" href="https://intentui.com/docs" rel="noopener">
+            Docs
+          </a>
           <a
             target="_blank"
             href="https://design.intentui.com/blocks"
