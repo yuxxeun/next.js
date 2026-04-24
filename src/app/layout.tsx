@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { RouterProvider } from "@/components/router-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const fontSans = localFont({
@@ -45,9 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${fontSans.variable} ${fontMono.variable} antialiased`}>
-        <RouterProvider>
-          <ThemeProvider>{children}</ThemeProvider>
-        </RouterProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
